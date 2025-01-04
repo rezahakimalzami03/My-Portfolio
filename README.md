@@ -1,11 +1,11 @@
 # My Portfolio Website
 
-This project is hosted with github pages on https://bhavithran1.github.io/Portfolio-website/
+This project is hosted with github pages on https://my-portfolio-reza.vercel.app/
 
 </br>
 
 <div align="center">
-<img hight="300" width="700" alt="PNG" align="center" src="https://github.com/bhavithran1/bhavithran1/blob/main/assets/portfolio-website.png">
+<img hight="300" width="700" alt="PNG" align="center" src="./src/assets/porto-header.png">
 </div>
 
 <br>
@@ -16,7 +16,7 @@ This website is built to run on most device screens seamlessly
 <br>
 
 <div align="center">
-<img hight="200" width="300" alt="PNG" align="center" src="https://github.com/bhavithran1/bhavithran1/blob/main/assets/phone.png">
+<img hight="200" width="300" alt="PNG" align="center" src="./src/assets/responsive.png">
 </div>
 
 <br>
@@ -40,7 +40,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-## Deployment
-
-This section has moved here: https://github.com/gitname/react-gh-pages

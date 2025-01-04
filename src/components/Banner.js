@@ -2,7 +2,7 @@ import React from 'react';
 // Images
 import Image from "../assets/avatar.jpg";
 // Icons
-import { FaGithub, FaLinkedin, FaSteam } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 // Type animation
 import { TypeAnimation } from 'react-type-animation';
 // Motion
@@ -69,14 +69,14 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[30px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
-              <a href="https://www.linkedin.com/in/bhavithran-ananthan-0207542ab/">
+              <a href="https://www.linkedin.com/in/reza-hakim-757784283/">
                 <FaLinkedin />
               </a>
-              <a href="https://github.com/bhavithran1">
+              <a href="https://github.com/rezahakimalzami03/">
                 <FaGithub />
               </a>
-              <a href="https://steamcommunity.com/profiles/76561198800501618/">
-                <FaSteam />
+              <a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=2110631170100@student.unsika.ac.id">
+                <FaEnvelope />
               </a>
             </motion.div>
           </div>
