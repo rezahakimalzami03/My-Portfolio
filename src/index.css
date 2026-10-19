@@ -2,70 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
-  background: linear-gradient(
-    92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
-    #3bace2 100%,
-    #406aff 117.04%
-  );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
-}
-
-.btn:hover {
-  background: linear-gradient(
-    92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
-  );
-}
-
-.gradient,
-.active {
-  background: linear-gradient(
-    92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
-  );
-}
-
-.active {
-  color: #fff;
-  padding: 1rem;
-  border-radius: 100%;
-}
-
 @layer base {
-  body {
-    @apply font-secondary text-lg leading-8 text-white;
-  }
-  .h2 {
-    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
-  }
-  .h3 {
-    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
-  }
-  .btn {
-    @apply rounded-full font-primary text-white font-medium;
-  }
-  .btn-sm {
-    @apply h-[48px] px-6 text-sm;
-  }
-  .btn-lg {
-    @apply h-[56px] px-10 text-base;
-  }
-  .btn-link {
-    @apply text-base;
-  }
-  .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
-  }
-  .section {
-    @apply py-8 lg:py-24 lg:h-screen flex items-center;
-  }
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+  body { @apply font-sans text-ink bg-paper antialiased; }
+  :focus-visible { @apply outline outline-2 outline-offset-2 outline-teal; }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center rounded-lg px-5 h-12 font-semibold transition-colors; }
+  .btn-primary { @apply bg-teal text-white hover:bg-teal-dark; }
+  .btn-ghost { @apply border border-ink/30 hover:border-ink hover:bg-white; }
+  .tag { @apply rounded border border-line bg-white px-2 py-0.5 text-sm text-muted; }
+}
+
+@keyframes drop {
+  from { opacity: 0; transform: translateY(-18px) rotate(-2deg); }
+  to { opacity: 1; transform: none; }
+}
+.badge-in { animation: drop .8s cubic-bezier(.2,.8,.2,1) both; transform-origin: top center; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .badge-in { animation: none; }
 }
